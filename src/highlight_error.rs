@@ -1,10 +1,12 @@
+use alloc::{format, string::String};
+
 /// Given a complete source file, highlights an error between two indexes (in bytes).
 pub fn highlight_error(ini_idx: usize, end_idx: usize, file: &str) -> String {
   // Please do NOT "improve" this by using high-order functions
 
   // Appends empty spaces to the left of a text
   fn pad(len: usize, txt: &str) -> String {
-    return format!("{}{}", " ".repeat(std::cmp::max(len - txt.len(), 0)), txt);
+    return format!("{}{}", " ".repeat(core::cmp::max(len - txt.len(), 0)), txt);
   }
 
   // Makes sure the end index is lower than the end index

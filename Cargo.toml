@@ -1,6 +1,6 @@
 [package]
 name = "highlight_error"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Highlights an error for printing"
 repository = "https://github.com/VictorTaelin/rust_highlight_error"
@@ -9,3 +9,6 @@ keywords = ["console", "terminal", "error"]
 categories = ["utils"]
 
 [dependencies]
+[features]
+std = []
+default = ["std"]

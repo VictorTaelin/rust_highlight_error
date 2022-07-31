@@ -1,4 +1,10 @@
+/// The "main" program can only be compiled
+/// with std.
+
+#![cfg(feature = "std")]
 #![allow(dead_code)]
+
+extern crate alloc;
 
 mod highlight_error;
 
