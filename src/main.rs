@@ -1,7 +1,5 @@
 #![allow(dead_code)]
 
-mod highlight_error;
-
 fn main() {
   let code = "functon is_zero (x) {
     if (x == 0) [
